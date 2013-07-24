@@ -1,0 +1,6 @@
+services:
+    nmb.tinymce.twig_extension:
+        class: Nmb\TinymceBundle\Twig\Extension\NmbTinymceExtension
+        arguments: [@service_container]
+        tags:
+          - { name: twig.extension }
