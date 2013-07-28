@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Nmb\\TinymceBundle": ""
+            "Nmb\\TinymceBundle": "nmb/tinymce-bundle"
         }
     },
     "minimum-stability": "dev"
