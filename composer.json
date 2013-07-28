@@ -20,6 +20,5 @@
             "Nmb\\TinymceBundle": ""
         }
     },
-    "target-dir": "Nmb/TinymceBundle",
     "minimum-stability": "dev"
 }
