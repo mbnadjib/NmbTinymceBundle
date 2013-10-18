@@ -40,19 +40,20 @@ refer to tinymce documentation for the configuration itself: http://www.tinymce.
 ``` yaml
 # app/config/config.yml
 nmb_tinymce:
-    my_basic_config:
-        selector: textarea
-    advenced_config:
-        selector: "textarea#elm1"
-        theme: "modern"
-        width: 300
-        height: 300
-        plugins: ["advlist autolink link image lists","searchreplace wordcount visualblocks code","save table contextmenu directionality textcolor"]
-        content_css: "css/content.css"
-        toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | l      ink image | print preview media fullpage | forecolor backcolor emoticons"
-        style_formats: [ [title: 'Bold text', inline: 'b'], [title: 'exmample 2', inline: 'span', styles: [color: '#fff000']] ]      
-    other_config:
-        ...
+    configs:
+        my_basic_config:
+            selector: textarea
+        advanced_config:
+            selector: "textarea#elm1"
+            theme: "modern"
+            width: 300
+            height: 300
+            plugins: ["advlist autolink link image lists","searchreplace wordcount visualblocks code","save table contextmenu directionality textcolor"]
+            content_css: "css/content.css"
+            toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | l      ink image | print preview media fullpage | forecolor backcolor emoticons"
+            style_formats: [ [title: 'Bold text', inline: 'b'], [title: 'exmample 2', inline: 'span', styles: [color: '#fff000']] ]      
+        other_config:
+            ...
 ```
 
 ## Usage
